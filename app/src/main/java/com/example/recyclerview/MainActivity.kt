@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val adapterMahasiswa = MahasiswaAdapter(generatemahasiswa()){
-            mahasiswa -> Toast.makeText(this@MainActivity, "You clicked on ${mahasiswa.nama}", Toast.LENGTH_SHORT)
+            mahasiswa -> Toast.makeText(this@MainActivity, "You clicked on ${mahasiswa.nama}", Toast.LENGTH_SHORT).show()
         }
 
         with(binding){

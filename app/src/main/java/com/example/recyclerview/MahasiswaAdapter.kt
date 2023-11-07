@@ -20,6 +20,10 @@ class MahasiswaAdapter (private val listMahasiswa: List<Mahasiswa>,
                             nim.text = data.nim
                             ipk.text = data.ipk
 
+                            if (data.profil != 0){
+                                imageMahasiswa.setImageResource(data.profil)
+                            }
+
                             itemView.setOnClickListener(){
                                 onClickMahasiswa(data)
                             }
